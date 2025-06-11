@@ -2,25 +2,7 @@ import yfinance as yf
 import pandas as pd
 import datetime
 
-# Define the tickers
-tickers = [
-"UBER", "UNH",  "JD",   "AVGO", "TRGP", "OKE",  "ARRY", "COST", "PGR",
-"CHRD", "NE",   "GPOR", "SABR", "PSX",  "TAL",  "ISRG", "DINO", "LNG",  "PAGP",
-"PR",   "ANET", "FANG", "FSLR", "CVNA", "PG",   "LUV",  "SBUX", "NFLX", "LLY",
-"VRTX", "HUM",  "TSEM", "OVV",  "PPL",  "CVX",  "MELI", "VLO",  "SMCI", "CRM",
-"MKL",  "DIS",  "HAL",  "BKNG", "NOW",  "PYPL", "SPOT", "VTI",  
-"SRLN", "GWRE", "ALV",  "HAS",  "ADNT", "LBTYA",        "CSTM", "EQT",  "EPD",  "ASO",
-"BAC",  "JOE",  "NPWR", "TDG",  "ADBE", "JPM",  "ELV",  "TECK", "SHEL", "CSCO",
-"KMI",  "MCO",  "TSM",  "BNTX", "AMD",  "PDD",  "ORCL", "EDU",  "CACC",
-"SNX",  "INTC", "KLAC", "NVDA", "BRK-B",        "AMAT", "WFC",  "MRNA", "IBKR", "AAPL",
-"TSLA", "SPGI", "V",    "BABA", "MA",   "AMZN", "GOOG", "META", "GOOGL",        "MSFT",
-]
-
-tickers = [
-"AR", "AVGO", "CVE", "CRH", "ELV", "XOM", "VRT", "V",
-]
-
-# Custom initial weights (example)
+# Initial weights 
 custom_weights = {
 "INTC":0.50,    "MATV":0.38,    "NIO":0.41,     "CHTR":1.39,    "CRL":0.32,     "GPN":1.59,     "PYPL":0.64,    "TXN":0.93,     "GOOG":3.85,    "AMD":0.53,
 "V":2.03,       "MA":1.92,      "ARKK":0.67,    "PATH":0.28,    "PDD":0.87,     "MRAAY":0.47,   "TLT":11.54,    "RYAAY":1.90,   "ROKU":0.68,    "LYFT":1.34,
